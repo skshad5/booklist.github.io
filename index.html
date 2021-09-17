@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List Added</title>
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Head Section -->
+            <div class="header">
+              <span class="book-logo"> <i class="fas fa-book-reader"></i></span>
+              <h1 class="text-center mt-5">Book List Bangladesh</h1>
+            </div>
+
+            <!-- From Section -->
+            <form id="myForm">
+              <div class="form-group">
+                <label for="title" class="form-label">TITLE</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="title"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="form-group">
+                <label for="author" class="form-label">Author</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="author"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="form-group">
+                <label for="year" class="form-label">YEAR</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="year"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </form>
+            <button type="submit" class="btn btn-primary mt-4 custom-btn">
+              Submit
+            </button>
+            <!-- <button type="submit" class="btn btn-primary mt-4 reset-btn">
+              Reset
+            </button> -->
+            <input
+              type="button"
+              onclick="myFunction()"
+              value="Reset"
+              class="reset-btn"
+            />
+
+            <table class="table table-dark mt-5">
+              <thead>
+                <tr>
+                  <th scope="col">Title</th>
+                  <th scope="col">Author</th>
+                  <th scope="col">Year</th>
+                  <th scope="col">Email</th>
+                </tr>
+              </thead>
+              <tbody id="book-list"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Script link -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
